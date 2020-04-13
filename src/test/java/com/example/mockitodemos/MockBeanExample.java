@@ -12,6 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 public class MockBeanExample {
 
+    /* This annotation is useful in integration tests where a particular bean –
+    for example, an external service – needs to be mocked. */
     @MockBean
     UserRepository mockRepository;
 
